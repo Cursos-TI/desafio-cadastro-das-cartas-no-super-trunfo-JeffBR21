@@ -10,7 +10,7 @@ int main() {
     char cidade[50];
     int populacao;
     float km2;
-    double pib;
+    long pib;
     int pontosturisticos;
     double densidadepopulacional;
     double pibpercapita;
@@ -22,7 +22,7 @@ int main() {
     char cidade2[50];
     int populacao2;
     float km22;
-    double pib2;
+    long pib2;
     int pontosturisticos2;
     double densidadepopulacional2;
     double pibpercapita2;
@@ -90,16 +90,16 @@ int main() {
     scanf("%d", &pontosturisticos2);
     
     // Calculo do Densidade Populacional 
-    densidadepopulacional = (double) populacao2 / km22;
+    densidadepopulacional2 = (double) populacao2 / km22;
     
     //Calculo do PIB per capita
-    pibpercapita = (double) pib2 / populacao2;
+    pibpercapita2 = (double) pib2 / populacao2;
 
     // calculo do super poder
-    superpoder = (int) populacao2 + km22 + pib2 + pontosturisticos2 + pibpercapita2 + densidadepopulacional2;
+    superpoder2 = (int) populacao2 + km22 + pib2 + pontosturisticos2 + pibpercapita2 + densidadepopulacional2;
 
     // Exibição dos Dados da Carta 1:
-    printf("carta 2:\n");
+    printf("carta 1\n");
 
     printf("Codigo Da carta: %s\n", codigo);
     
@@ -122,7 +122,7 @@ int main() {
     printf("Super poder da carta: %d\n", superpoder);
 
     //Exibição da carta 2
-    printf("carta 1:\n");
+    printf("carta 2\n");
 
     printf("Codigo Da carta: %s\n", codigo2);
     
