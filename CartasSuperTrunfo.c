@@ -46,7 +46,7 @@ int main() {
     scanf("%d", &populacao);
 
     printf("Digite o PIB:\n");
-    scanf("%f", &pib);
+    scanf("%ld", &pib);
 
     printf("Digite a área:\n");
     scanf("%f", &km2);
@@ -61,7 +61,7 @@ int main() {
     pibpercapita = (double) pib / populacao;
 
     // calculo do super poder
-    superpoder = (int) populacao + km2 + pib + pontosturisticos + pibpercapita + densidadepopulacional;
+    superpoder = (long) (populacao + km2 + pib + pontosturisticos + pibpercapita + densidadepopulacional);
 
     // Cadastro da Carta 2:
     printf("***Cadastro Da Carta 2***\n");
@@ -81,7 +81,7 @@ int main() {
     scanf("%d", &populacao2);
 
     printf("Digite o PIB:\n");
-    scanf("%f", &pib2);
+    scanf("%ld", &pib2);
 
     printf("Digite a área:\n");
     scanf("%f", &km22);
@@ -96,7 +96,7 @@ int main() {
     pibpercapita2 = (double) pib2 / populacao2;
 
     // calculo do super poder
-    superpoder2 = (int) populacao2 + km22 + pib2 + pontosturisticos2 + pibpercapita2 + densidadepopulacional2;
+    superpoder2 = (long) (populacao2 + km22 + pib2 + pontosturisticos2 + pibpercapita2 + densidadepopulacional2);
 
     // Exibição dos Dados da Carta 1:
     printf("carta 1\n");
@@ -109,7 +109,7 @@ int main() {
 
     printf("População: %d\n", populacao);
 
-    printf("PIB: %f\n", pib);
+    printf("PIB: %ld\n", pib);
 
     printf("Área: %f\n", km2);
 
@@ -132,8 +132,8 @@ int main() {
 
     printf("População: %d\n", populacao2);
 
-    printf("PIB: %f\n", pib2);
-
+    printf("PIB: %ld\n", pib2);
+    
     printf("Área: %f\n", km22);
 
     printf("Pontos turísticos: %d\n", pontosturisticos2);
